@@ -1,0 +1,79 @@
+{
+  "manifest_version": 3,
+  "name": "Google Dorker PRO — Multi-Platform Lead Finder",
+  "version": "1.0.0",
+  "description": "PRO v1.0: Multi-platform lead finder with anti-detection (UA rotation, exponential backoff), real-time query log, crash recovery, direct contact links, pagination, and 350+ Google Dork patterns",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "downloads",
+    "scripting",
+    "notifications",
+    "alarms",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "*://www.google.com/*",
+    "*://www.google.co.uk/*",
+    "*://www.google.com.au/*",
+    "*://www.google.de/*",
+    "*://www.google.fr/*",
+    "*://www.google.es/*",
+    "*://www.google.it/*",
+    "*://www.google.com.br/*",
+    "*://www.google.ca/*",
+    "*://www.google.co.in/*",
+    "*://www.google.co.jp/*",
+    "*://www.google.com.tr/*",
+    "*://www.google.uz/*",
+    "*://www.instagram.com/*",
+    "*://www.facebook.com/*",
+    "*://www.tiktok.com/*",
+    "*://www.twitter.com/*",
+    "*://x.com/*",
+    "*://www.linkedin.com/*",
+    "*://www.youtube.com/*",
+    "*://www.pinterest.com/*",
+    "*://www.snapchat.com/*",
+    "*://www.threads.net/*",
+    "*://dns.google/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.google.co.uk/search*",
+        "*://www.google.com.au/search*",
+        "*://www.google.de/search*",
+        "*://www.google.fr/search*",
+        "*://www.google.es/search*",
+        "*://www.google.it/search*",
+        "*://www.google.com.br/search*",
+        "*://www.google.ca/search*",
+        "*://www.google.co.in/search*",
+        "*://www.google.co.jp/search*",
+        "*://www.google.com.tr/search*",
+        "*://www.google.uz/search*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

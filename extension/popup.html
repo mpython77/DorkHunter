@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Google Dorker PRO v1.0</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🔍 Google Dorker <span class="badge-pro">PRO</span> <span class="badge-version">v1.0</span></h1>
+    <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">🌙</div>
+  </header>
+
+  <!-- ─── Native App Status Bar ──────────────────────────────── -->
+  <div id="nativeStatusBar" class="native-status-bar dns-mode">
+    <span id="nativeStatusDot" class="status-dot"></span>
+    <span id="nativeStatusText">⏳ Checking verifier...</span>
+  </div>
+
+  <!-- ─── Tabs ──────────────────────────────────────────────── -->
+  <nav class="tabs">
+    <button class="tab active" data-tab="scraper">⚡ Scraper</button>
+    <button class="tab" data-tab="results">📋 Results</button>
+    <button class="tab" data-tab="templates">🎯 Templates</button>
+    <button class="tab" data-tab="dashboard">📊 Dashboard</button>
+    <button class="tab" data-tab="blacklist">🚫 Blacklist</button>
+    <button class="tab" data-tab="settings">⚙ Settings</button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TAB 1: SCRAPER                                              -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="tab-content active" id="tab-scraper">
+    <div class="card">
+      <label class="label">Category</label>
+      <select id="category">
+        <option value="priority">⭐ Priority (Top 40 Pro Dorks)</option>
+        <option value="all">🌐 All Categories (28+)</option>
+        <optgroup label="── Core ──">
+          <option value="basic_brand">👗 Basic Brand</option>
+          <option value="email">📧 Email Queries</option>
+          <option value="contact">📞 Contact Info</option>
+          <option value="luxury">💎 Luxury</option>
+          <option value="eco">🌿 Eco / Sustainable</option>
+          <option value="fashion">👗 Fashion</option>
+          <option value="shop">🛒 Shop</option>
+          <option value="ecommerce">🏪 E-Commerce</option>
+          <option value="manufacturer">🏭 Manufacturer</option>
+        </optgroup>
+        <optgroup label="── Niche ──">
+          <option value="niche">🎯 Plus Size / Modest</option>
+          <option value="boutique">✨ Boutique / Handmade</option>
+          <option value="geo">🗺 Geo-Targeted</option>
+          <option value="hashtag">#️⃣ Hashtag</option>
+          <option value="shipping">📦 Shipping</option>
+          <option value="product">👙 Product Type</option>
+          <option value="fitness">💪 Fitness</option>
+          <option value="jewelry">💎 Jewelry</option>
+          <option value="beauty">💄 Beauty</option>
+          <option value="food">🍕 Food & Restaurant</option>
+        </optgroup>
+        <optgroup label="── Advanced PRO ──">
+          <option value="influencer">🌟 Influencer / Creator</option>
+          <option value="b2b">🏢 B2B (LinkedIn CEO/Founder)</option>
+          <option value="collab_pr">🤝 Collab / PR / Sponsor</option>
+          <option value="startup">🚀 Startup / New Brand</option>
+          <option value="local_biz">📍 Local Business</option>
+          <option value="agency">🎯 Agency / Management</option>
+          <option value="tech_saas">💻 Tech / SaaS</option>
+          <option value="real_estate">🏠 Real Estate</option>
+          <option value="travel">✈ Travel / Hotel</option>
+          <option value="education">📚 Education / Coaching</option>
+        </optgroup>
+        <optgroup label="── Platform Leads ──">
+          <option value="facebook_leads">📘 Facebook Leads (15 dorks)</option>
+          <option value="linkedin_leads">💼 LinkedIn Leads (15 dorks)</option>
+          <option value="twitter_leads">🐦 Twitter/X Leads (10 dorks)</option>
+        </optgroup>
+        <optgroup label="── Deep Operators (PRO) ──">
+          <option value="deep_email">📧 Deep Email (intext, 18 dorks)</option>
+          <option value="deep_phone">📞 Deep Phone/WA/TG (19 dorks)</option>
+          <option value="fresh_leads">🆕 Fresh Leads (after:, 17 dorks)</option>
+          <option value="document_leads">📄 Document Leads (filetype, 16 dorks)</option>
+          <option value="wildcard_discovery">🌐 Wildcard Discovery (18 dorks)</option>
+        </optgroup>
+        <optgroup label="── Multi-Language ──">
+          <option value="lang_spanish">🇪🇸 Spanish Dorks</option>
+          <option value="lang_french">🇫🇷 French Dorks</option>
+          <option value="lang_turkish">🇹🇷 Turkish Dorks</option>
+          <option value="lang_arabic">🇸🇦 Arabic Dorks</option>
+          <option value="lang_portuguese">🇧🇷 Portuguese Dorks</option>
+          <option value="lang_german">🇩🇪 German Dorks</option>
+        </optgroup>
+        <option value="custom">✏ Custom Queries</option>
+      </select>
+    </div>
+
+    <div class="card row-2">
+      <div>
+        <label class="label">Domain</label>
+        <select id="googleDomain">
+          <option value="www.google.com">google.com 🇺🇸</option>
+          <option value="www.google.co.uk">google.co.uk 🇬🇧</option>
+          <option value="www.google.com.au">google.com.au 🇦🇺</option>
+          <option value="www.google.de">google.de 🇩🇪</option>
+          <option value="www.google.fr">google.fr 🇫🇷</option>
+          <option value="www.google.es">google.es 🇪🇸</option>
+          <option value="www.google.it">google.it 🇮🇹</option>
+          <option value="www.google.com.br">google.com.br 🇧🇷</option>
+          <option value="www.google.ca">google.ca 🇨🇦</option>
+          <option value="www.google.co.in">google.co.in 🇮🇳</option>
+          <option value="www.google.co.jp">google.co.jp 🇯🇵</option>
+          <option value="www.google.com.tr">google.com.tr 🇹🇷</option>
+          <option value="www.google.uz">google.uz 🇺🇿</option>
+        </select>
+      </div>
+      <div>
+        <label class="label">Pages</label>
+        <input type="number" id="maxPages" value="5" min="1" max="50">
+      </div>
+    </div>
+
+    <div class="card row-2">
+      <div>
+        <label class="label">Results/Page</label>
+        <select id="resultsPerPage">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+      </div>
+      <div>
+        <label class="label">Status</label>
+        <div id="statusBadge" class="status-badge idle">⏹ Idle</div>
+      </div>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="stats-grid">
+      <div class="stat"><span class="stat-value" id="statTotal">0</span><span class="stat-label">Total</span></div>
+      <div class="stat accent-green"><span class="stat-value" id="statEmails">0</span><span class="stat-label">Emails</span></div>
+      <div class="stat accent-blue"><span class="stat-value" id="statPhones">0</span><span class="stat-label">Phones</span></div>
+      <div class="stat accent-purple"><span class="stat-value" id="statWA">0</span><span class="stat-label">WhatsApp</span></div>
+      <div class="stat accent-pink"><span class="stat-value" id="statTG">0</span><span class="stat-label">Telegram</span></div>
+      <div class="stat accent-orange"><span class="stat-value" id="statCaptcha">0/0</span><span class="stat-label">CAPTCHA</span></div>
+      <div class="stat"><span class="stat-value" id="statPages">0</span><span class="stat-label">Pages</span></div>
+      <div class="stat"><span class="stat-value" id="statDupes">0</span><span class="stat-label">Dupes</span></div>
+      <div class="stat accent-red"><span class="stat-value" id="statBlocked">0</span><span class="stat-label">Blacklisted</span></div>
+      <div class="stat"><span class="stat-value" id="statSkips">0</span><span class="stat-label">Skipped</span></div>
+      <div class="stat"><span class="stat-value" id="statSaves">0</span><span class="stat-label">Auto-Saves</span></div>
+      <div class="stat"><span class="stat-value" id="statDomainRot">0</span><span class="stat-label">Domain Rot.</span></div>
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-text" id="progressText">Ready to start</div>
+
+    <!-- Controls -->
+    <div class="btn-row">
+      <button id="btnStart" class="btn btn-primary">▶ Start</button>
+      <button id="btnResume" class="btn btn-secondary" disabled>⏩ Resume</button>
+      <button id="btnPause" class="btn btn-secondary" disabled>⏸ Pause</button>
+      <button id="btnStop" class="btn btn-danger" disabled>⏹ Stop</button>
+    </div>
+    <div class="btn-row">
+      <button id="btnExportJSON" class="btn btn-small">📥 JSON</button>
+      <button id="btnExportCSV" class="btn btn-small">📥 CSV</button>
+      <button id="btnExportEmailCSV" class="btn btn-small accent-btn">📧 Email-only CSV</button>
+      <button id="btnReset" class="btn btn-small btn-danger">🗑 Reset</button>
+    </div>
+
+    <!-- v6.0: Live Query Log -->
+    <div class="card log-card">
+      <div class="log-header" id="logToggle">
+        <span>📝 Live Query Log</span>
+        <span class="log-toggle-icon" id="logToggleIcon">▼</span>
+      </div>
+      <div class="log-body" id="logBody" style="display:none;">
+        <div class="log-list" id="logList">
+          <div class="log-entry log-system">Ready to start...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TAB 2: RESULTS                                              -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="tab-content" id="tab-results">
+    <div class="card row-2">
+      <input type="text" id="filterResults" placeholder="🔍 Filter by username, email, platform...">
+      <select id="filterType">
+        <option value="all">All Platforms</option>
+        <option value="instagram">📸 Instagram</option>
+        <option value="facebook">👤 Facebook</option>
+        <option value="tiktok">🎵 TikTok</option>
+        <option value="twitter">🐦 Twitter/X</option>
+        <option value="linkedin">💼 LinkedIn</option>
+        <option value="youtube">🎬 YouTube</option>
+        <option value="pinterest">📌 Pinterest</option>
+        <option value="email">📧 Has Email</option>
+        <option value="phone">📞 Has Phone</option>
+        <option value="whatsapp">💬 Has WhatsApp</option>
+        <option value="telegram">✈ Has Telegram</option>
+        <option value="verified">✓ Verified</option>
+      </select>
+    </div>
+    <div class="results-table-wrap">
+      <table class="results-table" id="resultsTable">
+        <thead>
+          <tr>
+            <th>Platform</th>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Tag</th>
+            <th>Verify</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+      </table>
+    </div>
+    <!-- v6.0: Pagination -->
+    <div class="pagination-row">
+      <button class="btn btn-small" id="btnPrevPage" disabled>◀ Prev</button>
+      <span id="pageIndicator" class="page-indicator">Page 1</span>
+      <button class="btn btn-small" id="btnNextPage" disabled>Next ▶</button>
+    </div>
+    <div class="result-count" id="resultCount">0 results</div>
+    <!-- Tag Filter -->
+    <div class="card tag-filter-card">
+      <label class="label">🏷 Filter by Tag</label>
+      <div class="tag-filter-row">
+        <button class="tag-btn tag-all active" data-tag="all">All</button>
+        <button class="tag-btn tag-hot" data-tag="hot">🔥 Hot</button>
+        <button class="tag-btn tag-warm" data-tag="warm">🌤 Warm</button>
+        <button class="tag-btn tag-cold" data-tag="cold">❄ Cold</button>
+        <button class="tag-btn tag-contacted" data-tag="contacted">✅ Contacted</button>
+        <button class="tag-btn tag-favorite" data-tag="favorite">⭐ Favorite</button>
+      </div>
+    </div>
+    <div class="card" style="text-align:center">
+      <button id="btnVerifyAll" class="btn btn-primary" style="width:100%">📧 Verify All Emails</button>
+      <div id="verifyStatus" class="help-text" style="margin-top:6px"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TAB 3: TEMPLATES                                            -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="tab-content" id="tab-templates">
+    <div class="card ai-gen-card">
+      <label class="label">🧠 AI Smart Query Generator</label>
+      <p class="help-text">Enter niche — auto-generates 20+ dorks for all platforms</p>
+      <div class="template-input">
+        <input type="text" id="nicheInput" placeholder="e.g.: swimwear, jewelry, fitness, restaurant...">
+        <button id="btnGenerate" class="btn btn-primary">🧠 Generate</button>
+      </div>
+      <div class="ai-options">
+        <label class="platform-check"><input type="checkbox" id="aiUseIntext" checked> intext: (email)</label>
+        <label class="platform-check"><input type="checkbox" id="aiUseFiletype"> filetype: (docs)</label>
+        <label class="platform-check"><input type="checkbox" id="aiUseAfter" checked> after:2025 (fresh)</label>
+        <label class="platform-check"><input type="checkbox" id="aiUseWildcard"> * wildcard</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <label class="label">📱 Select Platforms</label>
+      <div class="platform-checkboxes" id="platformCheckboxes">
+        <label class="platform-check"><input type="checkbox" value="instagram" checked> 📸 Instagram</label>
+        <label class="platform-check"><input type="checkbox" value="facebook"> 👤 Facebook</label>
+        <label class="platform-check"><input type="checkbox" value="tiktok"> 🎵 TikTok</label>
+        <label class="platform-check"><input type="checkbox" value="twitter"> 🐦 Twitter/X</label>
+        <label class="platform-check"><input type="checkbox" value="linkedin"> 💼 LinkedIn</label>
+        <label class="platform-check"><input type="checkbox" value="youtube"> 🎬 YouTube</label>
+        <label class="platform-check"><input type="checkbox" value="pinterest"> 📌 Pinterest</label>
+        <label class="platform-check"><input type="checkbox" value="snapchat"> 👻 Snapchat</label>
+        <label class="platform-check"><input type="checkbox" value="threads"> 🧵 Threads</label>
+      </div>
+      <div class="btn-row">
+        <button id="btnSelectAll" class="btn btn-small btn-secondary">✅ Select All</button>
+        <button id="btnDeselectAll" class="btn btn-small btn-secondary">⬜ Deselect All</button>
+      </div>
+      <p class="help-text">15 queries per platform × selected platforms = total queries</p>
+    </div>
+
+    <div class="card" id="generatedQueries" style="display:none">
+      <label class="label">Generated Queries <span id="genCount" class="badge-count"></span></label>
+      <textarea id="generatedList" rows="8" readonly></textarea>
+      <div class="btn-row">
+        <button id="btnStartTemplate" class="btn btn-primary">▶ Start with These</button>
+        <button id="btnSaveAsCustom" class="btn btn-secondary">💾 Save as Custom</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <label class="label">✏ Custom Queries</label>
+      <textarea id="customQueries" rows="6" placeholder="Enter one dork query per line..."></textarea>
+      <div class="btn-row">
+        <button id="btnSaveCustom" class="btn btn-primary">💾 Save</button>
+        <button id="btnLoadCustom" class="btn btn-secondary">📂 Load Saved</button>
+      </div>
+    </div>
+
+    <div class="card tips-card">
+      <label class="label">💡 Dork Tips</label>
+      <ul>
+        <li><code>site:instagram.com "niche"</code> — Instagram profiles</li>
+        <li><code>site:tiktok.com/@"niche"</code> — TikTok accounts</li>
+        <li><code>site:facebook.com "niche"</code> — Facebook pages</li>
+        <li><code>site:x.com "niche"</code> — Twitter/X accounts</li>
+        <li><code>"@gmail.com"</code> — find emails on any platform</li>
+        <li><code>"DM for orders"</code> — active sellers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TAB 4: DASHBOARD                                            -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="tab-content" id="tab-dashboard">
+    <div class="dashboard-grid">
+      <div class="dash-card">
+        <div class="dash-title">📧 Email Rate</div>
+        <div class="dash-value" id="dashEmailRate">0%</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-title">📞 Phone Rate</div>
+        <div class="dash-value" id="dashPhoneRate">0%</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-title">⏱ Duration</div>
+        <div class="dash-value" id="dashDuration">0m</div>
+      </div>
+      <div class="dash-card">
+        <div class="dash-title">⚡ Speed</div>
+        <div class="dash-value" id="dashSpeed">0/min</div>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="card">
+      <label class="label">📊 Platform Distribution</label>
+      <canvas id="platformChart" width="400" height="150"></canvas>
+    </div>
+
+    <div class="card">
+      <label class="label">📧 Contact Types</label>
+      <canvas id="contactChart" width="400" height="150"></canvas>
+    </div>
+
+    <div class="card">
+      <label class="label">📈 Results Over Time</label>
+      <canvas id="timelineChart" width="400" height="120"></canvas>
+    </div>
+
+    <div class="card">
+      <label class="label">🏆 Top Queries</label>
+      <div id="topQueriesList" class="top-queries-list">
+        <div class="empty-state">No data yet. Start scraping!</div>
+      </div>
+    </div>
+
+    <!-- Full Scheduler -->
+    <div class="card scheduler-card">
+      <label class="label">⏰ Scheduler</label>
+      <div class="scheduler-row">
+        <input type="time" id="schedulerTime" value="">
+        <select id="schedulerRepeat">
+          <option value="daily">📅 Daily</option>
+          <option value="weekdays">🏢 Weekdays</option>
+          <option value="once">1️⃣ Once</option>
+        </select>
+      </div>
+      <div class="scheduler-days">
+        <label><input type="checkbox" value="1" checked> Mon</label>
+        <label><input type="checkbox" value="2" checked> Tue</label>
+        <label><input type="checkbox" value="3" checked> Wed</label>
+        <label><input type="checkbox" value="4" checked> Thu</label>
+        <label><input type="checkbox" value="5" checked> Fri</label>
+        <label><input type="checkbox" value="6"> Sat</label>
+        <label><input type="checkbox" value="0"> Sun</label>
+      </div>
+      <div class="scheduler-row">
+        <select id="schedulerCategory">
+          <option value="priority">⭐ Priority Dorks</option>
+          <option value="all">🌐 All Categories</option>
+          <option value="deep_email">📧 Deep Email</option>
+          <option value="deep_phone">📞 Deep Phone</option>
+          <option value="fresh_leads">🆕 Fresh Leads</option>
+        </select>
+      </div>
+      <div class="btn-row">
+        <button id="btnSetScheduler" class="btn btn-primary">▶ Set Schedule</button>
+        <button id="btnClearScheduler" class="btn btn-small btn-danger">🗑 Clear</button>
+      </div>
+      <div id="schedulerStatus" class="help-text">No schedule set</div>
+      <div id="schedulerLastRun" class="help-text"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TAB 5: BLACKLIST                                            -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="tab-content" id="tab-blacklist">
+    <div class="card">
+      <label class="label">🚫 Blacklisted Usernames <span id="blacklistCount" class="badge-count">0</span></label>
+      <p class="help-text">These usernames will be skipped during scraping</p>
+    </div>
+
+    <div class="card">
+      <label class="label">Import from file or paste</label>
+      <textarea id="blacklistInput" rows="5" placeholder="Paste usernames (one per line)..."></textarea>
+      <div class="btn-row">
+        <button id="btnImportBlacklist" class="btn btn-primary">📥 Import</button>
+        <button id="btnAddCurrentResults" class="btn btn-secondary">➕ Add All Current Results</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="btn-row">
+        <button id="btnExportBlacklist" class="btn btn-small">📤 Export</button>
+        <button id="btnClearBlacklist" class="btn btn-small btn-danger">🗑 Clear All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- TAB 6: SETTINGS                                             -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="tab-content" id="tab-settings">
+    <div class="settings-section">
+      <h3>⏱ Timing</h3>
+      <div class="setting-row">
+        <label>Page Delay (sec)</label>
+        <div class="range-inputs">
+          <input type="number" id="pageDelayMin" value="4" min="1" max="60"> —
+          <input type="number" id="pageDelayMax" value="8" min="1" max="120">
+        </div>
+      </div>
+      <div class="setting-row">
+        <label>Query Delay (sec)</label>
+        <div class="range-inputs">
+          <input type="number" id="queryDelayMin" value="10" min="3" max="300"> —
+          <input type="number" id="queryDelayMax" value="20" min="3" max="600">
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>🤖 CAPTCHA</h3>
+      <div class="setting-row">
+        <label>Retry Attempts</label>
+        <input type="number" id="captchaRetries" value="3" min="1" max="10">
+      </div>
+      <div class="setting-row">
+        <label>Wait After Click (sec)</label>
+        <input type="number" id="captchaWait" value="5" min="2" max="30">
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>🧠 Smart Skip</h3>
+      <div class="setting-row">
+        <label>Empty Page Threshold</label>
+        <input type="number" id="smartSkipThreshold" value="3" min="1" max="10">
+      </div>
+      <div class="setting-row">
+        <label>Enable Smart Skip</label>
+        <select id="smartSkipEnabled"><option value="true">Yes</option><option value="false">No</option></select>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>🌐 Domain Rotation</h3>
+      <div class="setting-row">
+        <label>Auto-Rotate Domains</label>
+        <select id="domainRotation"><option value="false">Off</option><option value="true">On</option></select>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>🔍 Deep Scan</h3>
+      <div class="setting-row">
+        <label>Visit IG Profiles</label>
+        <select id="deepScanEnabled"><option value="false">Off</option><option value="true">On (Slower)</option></select>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>💾 Auto-Save</h3>
+      <div class="setting-row">
+        <label>Save Every N Results</label>
+        <input type="number" id="autoSaveInterval" value="10" min="1" max="100">
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>🖥 Browser</h3>
+      <div class="setting-row">
+        <label>Tab Visibility</label>
+        <select id="tabActive"><option value="false">Background</option><option value="true">Foreground</option></select>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>🔔 Notifications</h3>
+      <div class="setting-row">
+        <label>Desktop Notifications</label>
+        <select id="notificationsEnabled"><option value="true">On</option><option value="false">Off</option></select>
+      </div>
+      <div class="setting-row">
+        <label>Sound Alerts</label>
+        <select id="soundEnabled"><option value="true">On</option><option value="false">Off</option></select>
+      </div>
+      <div class="setting-row">
+        <label>Notify on New Email</label>
+        <select id="notifyOnEmail"><option value="true">On</option><option value="false">Off</option></select>
+      </div>
+      <div class="setting-row">
+        <label>Notify on CAPTCHA</label>
+        <select id="notifyOnCaptcha"><option value="true">On</option><option value="false">Off</option></select>
+      </div>
+      <div class="setting-row">
+        <label>Notify on Complete</label>
+        <select id="notifyOnComplete"><option value="true">On</option><option value="false">Off</option></select>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>📧 Email Verifier</h3>
+      <div class="setting-row" style="flex-direction:column; align-items:flex-start; gap:6px">
+        <div id="verifierStatusCard" style="width:100%; padding:10px; border-radius:8px; background:rgba(139,148,158,0.1)">
+          <div style="display:flex; align-items:center; gap:8px">
+            <span id="verifierIcon" style="font-size:18px">⏳</span>
+            <div>
+              <div id="verifierMode" style="font-weight:600;font-size:13px">Checking...</div>
+              <div id="verifierDetail" style="font-size:11px;color:#8b949e">Checking verifier status</div>
+            </div>
+          </div>
+        </div>
+        <button id="btnReconnectVerifier" class="btn btn-small btn-secondary" style="width:100%">🔄 Reconnect</button>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>📁 Export</h3>
+      <div class="setting-row">
+        <label>Filename Prefix</label>
+        <input type="text" id="exportPrefix" value="dorking">
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>🎨 Theme</h3>
+      <div class="setting-row">
+        <label>Color Mode</label>
+        <select id="themeSelect">
+          <option value="dark">🌙 Dark</option>
+          <option value="light">☀ Light</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button id="btnSaveSettings" class="btn btn-primary">💾 Save Settings</button>
+      <button id="btnResetSettings" class="btn btn-secondary">↩ Reset Defaults</button>
+    </div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>

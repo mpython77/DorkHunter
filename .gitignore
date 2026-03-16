@@ -1,0 +1,44 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env
+
+# Results & data (user-generated, don't push)
+results/
+*.json
+!extension/manifest.json
+!extension/queries.js
+
+# Cookies & credentials
+google_cookies.json
+*.cookie
+*.session
+
+# Build artifacts
+dorker_verify/target/
+dorker_verify/dorker_verify.exe
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temp files
+*.log
+*.tmp
+test_verify.ps1
+%LOCALAPPDATA%/
+
+# Rust build cache
+rust_build_tmp/

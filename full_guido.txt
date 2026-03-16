@@ -1,0 +1,485 @@
+Ha, mana shu query’larni **kengaytirib**, Instagram’dan **swimwear lead** topish uchun deyarli barcha foydali variantlarga ajratib berdim.
+
+Men buni 3 qismda tuzdim:
+
+1. **asosiy universal qoliplar**
+2. **tayyor qidiruvlar**
+3. **keyword kombinatsiyalar**
+
+---
+
+# 1) Asosiy qoliplar
+
+Bular eng foydali shablonlar. Keyin xohlagan keywordni qo‘yib ishlatasan.
+
+### Oddiy profil topish
+
+```text
+site:instagram.com "<keyword>" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Email borlarini topish
+
+```text
+site:instagram.com "<keyword>" "email" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Website borlarini topish
+
+```text
+site:instagram.com "<keyword>" ".com" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Contact borlarini topish
+
+```text
+site:instagram.com "<keyword>" "contact" -"/p/" -"/reel/" -"/explore/"
+```
+
+### WhatsApp borlarini topish
+
+```text
+site:instagram.com "<keyword>" "whatsapp" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Brand ekanini kuchaytirish
+
+```text
+site:instagram.com "<keyword>" "brand" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Store/shop borlarini topish
+
+```text
+site:instagram.com "<keyword>" "shop" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "<keyword>" "store" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Shopping & retail type profillar
+
+```text
+site:instagram.com "<keyword>" "shopping & retail" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Product/service type profillar
+
+```text
+site:instagram.com "<keyword>" "product/service" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Clothing brand bilan aralashtirib topish
+
+```text
+site:instagram.com "<keyword>" "clothing (brand)" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Premium/luxury segment
+
+```text
+site:instagram.com "<keyword>" "luxury" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "<keyword>" "designer" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "<keyword>" "premium" -"/p/" -"/reel/" -"/explore/"
+```
+
+### Eco/sustainable segment
+
+```text
+site:instagram.com "<keyword>" "sustainable" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "<keyword>" "ethical" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "<keyword>" "eco" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "<keyword>" "recycled" -"/p/" -"/reel/" -"/explore/"
+```
+
+---
+
+# 2) Tayyor qidiruvlar
+
+## A) Asosiy swimwear leadlar
+
+```text
+site:instagram.com "swimwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimsuit brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "resortwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swim brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini label" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear label" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beach brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "vacation wear brand" -"/p/" -"/reel/" -"/explore/"
+```
+
+## B) Email bor swimwear leadlar
+
+```text
+site:instagram.com "swimwear brand" "email" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "email" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear brand" "email" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "resortwear brand" "email" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimsuit brand" "email" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "@gmail.com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini" "@gmail.com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "@hotmail.com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "@outlook.com" -"/p/" -"/reel/" -"/explore/"
+```
+
+## C) Website bor, jiddiyroq brandlar
+
+```text
+site:instagram.com "swimwear brand" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "luxury swimwear" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "sustainable swimwear" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear brand" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "resortwear brand" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimsuit brand" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini label" ".com" -"/p/" -"/reel/" -"/explore/"
+```
+
+## D) Shop/store bor brandlar
+
+```text
+site:instagram.com "swimwear brand" "shop" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "shop" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear brand" "shop" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" "store" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "store" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "shop now" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini" "shop now" -"/p/" -"/reel/" -"/explore/"
+```
+
+## E) Premium / luxury segment
+
+```text
+site:instagram.com "luxury swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "premium swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "designer swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "designer bikini" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "high end swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "exclusive swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "luxury beachwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "luxury resortwear" -"/p/" -"/reel/" -"/explore/"
+```
+
+## F) Sustainable / eco segment
+
+```text
+site:instagram.com "sustainable swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "ethical swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "eco swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "recycled swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "sustainable bikini" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "ethical bikini brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "slow fashion swimwear" -"/p/" -"/reel/" -"/explore/"
+```
+
+## G) Women's segment
+
+```text
+site:instagram.com "women's swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "women swimwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "women's bikini brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "ladies swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "women's beachwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "women's resortwear" -"/p/" -"/reel/" -"/explore/"
+```
+
+## H) Niche segmentlar
+
+```text
+site:instagram.com "plus size swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "modest swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "maternity swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "kids swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "men's swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "surf swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "active swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "competition swimwear" -"/p/" -"/reel/" -"/explore/"
+```
+
+## I) Handmade / boutique / small brand
+
+```text
+site:instagram.com "handmade swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "boutique swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "independent swimwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "small swimwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "artisan swimwear" -"/p/" -"/reel/" -"/explore/"
+```
+
+## J) Manufacturer / wholesale / supplier
+
+```text
+site:instagram.com "swimwear manufacturer" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini manufacturer" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear wholesale" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "private label swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear supplier" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear wholesale" -"/p/" -"/reel/" -"/explore/"
+```
+
+## K) Contact-driven qidiruvlar
+
+```text
+site:instagram.com "swimwear" "contact us" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "contact" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" "dm for orders" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "whatsapp" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "order now" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "worldwide shipping" -"/p/" -"/reel/" -"/explore/"
+```
+
+## L) Fashion bilan kesishgan querylar
+
+```text
+site:instagram.com "swimwear" "fashion brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini" "fashion brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear" "fashion" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "resortwear" "fashion brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "clothing brand" -"/p/" -"/reel/" -"/explore/"
+```
+
+## M) Shopify/ecommerce signal bilan
+
+```text
+site:instagram.com "swimwear" "shopify" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "shopify" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" "online store" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "online store" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "available online" -"/p/" -"/reel/" -"/explore/"
+```
+
+## N) Geolocation bo‘yicha
+
+```text
+site:instagram.com "swimwear brand" "usa" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" "uk" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" "australia" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" "miami" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "los angeles" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear brand" "dubai" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "resortwear brand" "bali" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "brazil" -"/p/" -"/reel/" -"/explore/"
+```
+
+## O) Hashtag bilan
+
+```text
+site:instagram.com "#swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "#bikini" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "#beachwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "#resortwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "#swimsuit" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "#swimwearbrand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "#bikinibrand" -"/p/" -"/reel/" -"/explore/"
+```
+
+---
+
+# 3) Keyword bazasi
+
+Mana shu so‘zlarni bir-biriga qo‘shib juda ko‘p query yasash mumkin.
+
+### Core keywordlar
+
+```text
+swimwear
+bikini
+swimsuit
+beachwear
+resortwear
+swim brand
+swimwear brand
+bikini brand
+swimsuit brand
+beach brand
+```
+
+### Product keywordlar
+
+```text
+one piece
+two piece
+triangle bikini
+bikini set
+swim set
+bathing suit
+monokini
+beach set
+cover up
+sarong
+```
+
+### Brand signal keywordlar
+
+```text
+brand
+label
+store
+shop
+boutique
+designer
+official
+collection
+new collection
+shop now
+```
+
+### Business signal keywordlar
+
+```text
+email
+contact
+whatsapp
+worldwide shipping
+online store
+dm for orders
+shipping worldwide
+available online
+```
+
+### Quality signal keywordlar
+
+```text
+luxury
+premium
+designer
+exclusive
+high end
+sustainable
+ethical
+eco
+recycled
+handmade
+```
+
+### Category signal keywordlar
+
+```text
+shopping & retail
+product/service
+clothing (brand)
+clothing brand
+fashion brand
+women's clothing store
+store
+```
+
+---
+
+# 4) Eng kuchli tayyor 25 ta query
+
+Bularni bevosita ishlataversang bo‘ladi:
+
+```text
+site:instagram.com "swimwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimsuit brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "resortwear brand" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" "email" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" "email" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear brand" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini brand" ".com" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "luxury swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "premium swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "designer bikini" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "sustainable swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "ethical swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "eco swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "women's swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "plus size swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "modest swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "handmade swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "boutique swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear manufacturer" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "private label swimwear" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "online store" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "worldwide shipping" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "swimwear" "shopping & retail" -"/p/" -"/reel/" -"/explore/"
+```
+
+---
+
+# 5) Eng yaxshi ishlash usuli
+
+Hammasini birdan ishlatish shart emas. Eng yaxshi tartib:
+
+### 1-guruh: asosiy brandlar
+
+* swimwear brand
+* bikini brand
+* swimsuit brand
+* beachwear brand
+* resortwear brand
+
+### 2-guruh: business signal
+
+* email
+* .com
+* contact
+* shop
+* online store
+
+### 3-guruh: quality signal
+
+* luxury
+* designer
+* premium
+* sustainable
+* ethical
+
+### 4-guruh: niche segment
+
+* plus size
+* modest
+* handmade
+* boutique
+* private label
+
+---
+
+# 6) Yana kuchaytirish uchun
+
+Ba’zi querylarda `brand` o‘rniga boshqalarni ham aylantirib ko‘r:
+
+```text
+brand
+label
+store
+shop
+boutique
+official
+collection
+designer
+```
+
+Masalan:
+
+```text
+site:instagram.com "swimwear label" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "bikini boutique" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "beachwear store" -"/p/" -"/reel/" -"/explore/"
+site:instagram.com "resortwear label" -"/p/" -"/reel/" -"/explore/"
+```
+
+---
+
+# 7) Muhim eslatma
+
+Google har doim ham Instagram profillarni to‘liq chiqarmaydi. Shuning uchun:
+
+* ba’zi querylar yaxshi ishlaydi
+* ba’zilari kam natija beradi
+* eng kuchlilari odatda:
+
+  * `brand`
+  * `email`
+  * `.com`
+  * `shop`
+  * `luxury`
+  * `sustainable`
+
+---
+
+Xohlasang, keyingi xabarda men buni senga **CSV ko‘rinishida**, yoki **Python list** qilib tayyorlab beraman, to‘g‘ridan-to‘g‘ri scraping scriptga qo‘shib yuborasan.
